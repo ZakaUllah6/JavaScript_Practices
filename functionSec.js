@@ -36,3 +36,14 @@ console.log(calculationAge(1999));
 
 const age = calculatioAge2(1997);
 console.log(age);
+
+//Arrow Functions
+
+const daystoretirment = (birthYear) => {
+  countYears = birthYear - 65;
+  left = countYears * 365;
+  return `You Have left to Retirment ${left} days`;
+};
+
+const days = daystoretirment(1999);
+console.log(days);
