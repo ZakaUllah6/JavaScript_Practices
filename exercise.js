@@ -4,6 +4,7 @@ const printString = function (name) {
   for (i = 0; i <= name.length - 1; i++) {
     console.log(name[i]);
   }
+  return name;
 };
 console.log(printString("Zaka"));
 
@@ -13,6 +14,7 @@ const reverseString = function (name) {
   for (i = name.length - 1; i >= 0; i--) {
     console.log(name[i]);
   }
+  return name;
 };
 console.log(reverseString("Khan"));
 
@@ -34,6 +36,7 @@ const reverseNumber = function (number) {
   for (i = text.length - 1; i >= 0; i--) {
     console.log(text[i]);
   }
+  return text;
 };
 console.log(reverseNumber(12345678999));
 
@@ -52,6 +55,7 @@ const checkPalindrome = function (str1) {
   } else {
     console.log("its not palindrome");
   }
+  return str2;
 };
 console.log(checkPalindrome("kayak"));
 
@@ -75,6 +79,13 @@ console.log(combinationOfString("dog"));
 // Example string : 'webmaster'
 // Expected Output : 'abeemrstw'
 // Assume punctuation and numbers symbols are not included in the passed string.
+
+const aplaOrder = function (str2) {
+  const letter = str2.split("");
+  const alpa = letter.sort().join("");
+  return alpa;
+};
+console.log(aplaOrder("webmaster"));
 
 /*5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
 Example string : 'the quick brown fox'
