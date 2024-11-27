@@ -54,3 +54,32 @@ const checkPalindrome = function (str1) {
   }
 };
 console.log(checkPalindrome("kayak"));
+
+// Write a JavaScript function that generates all combinations of a string.
+// Example string : 'dog'
+// Expected Output : d,do,dog,o,og,g
+
+const combinationOfString = function (str) {
+  let result = [];
+
+  for (i = 0; i <= str.length; i++) {
+    for (j = 1; j <= str.length; j++) {
+      result.push(str.slice(i, j));
+    }
+  }
+  return result;
+};
+console.log(combinationOfString("dog"));
+
+// 4. Write a JavaScript function that returns a string that has letters in alphabetical order.
+// Example string : 'webmaster'
+// Expected Output : 'abeemrstw'
+// Assume punctuation and numbers symbols are not included in the passed string.
+
+/*5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
+Example string : 'the quick brown fox'
+Expected Output : 'The Quick Brown Fox ' */
+
+/* 6. Write a JavaScript function that accepts a string as a parameter and finds the longest word within the string.
+Example string : 'Web Development Tutorial'
+Expected Output : 'Development' */
