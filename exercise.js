@@ -81,6 +81,7 @@ console.log(combinationOfString("dog"));
 // Assume punctuation and numbers symbols are not included in the passed string.
 
 const aplaOrder = function (str2) {
+  console.log(str2);
   const letter = str2.split("");
   const alpa = letter.sort().join("");
   return alpa;
@@ -91,6 +92,13 @@ console.log(aplaOrder("webmaster"));
 Example string : 'the quick brown fox'
 Expected Output : 'The Quick Brown Fox ' */
 
+const convertToUpperCase = function (str3) {
+  return str3
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+};
+console.log(convertToUpperCase("the quick brown fox"));
 /* 6. Write a JavaScript function that accepts a string as a parameter and finds the longest word within the string.
 Example string : 'Web Development Tutorial'
 Expected Output : 'Development' */
