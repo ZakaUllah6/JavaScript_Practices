@@ -36,3 +36,21 @@ const reverseNumber = function (number) {
   }
 };
 console.log(reverseNumber(12345678999));
+
+// Write a JavaScript function that checks whether a passed string is a palindrome or not?
+// A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
+
+// const str1 = "Zaka";
+// const str2 = str1.split("").reverse().join("");
+// console.log(str2);
+
+const checkPalindrome = function (str1) {
+  const str2 = str1.split("").reverse().join("");
+  console.log(str2);
+  if (str1 == str2) {
+    console.log("its palindrome");
+  } else {
+    console.log("its not palindrome");
+  }
+};
+console.log(checkPalindrome("kayak"));
