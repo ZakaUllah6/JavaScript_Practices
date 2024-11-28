@@ -99,6 +99,21 @@ const convertToUpperCase = function (str3) {
     .join(" ");
 };
 console.log(convertToUpperCase("the quick brown fox"));
+
 /* 6. Write a JavaScript function that accepts a string as a parameter and finds the longest word within the string.
 Example string : 'Web Development Tutorial'
 Expected Output : 'Development' */
+
+function findLongestWord(str) {
+  let words = str.split(" ");
+  let longestWord = "";
+
+  for (let word of words) {
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
+  }
+
+  return longestWord;
+}
+console.log(findLongestWord("Web Development Tutorial"));
