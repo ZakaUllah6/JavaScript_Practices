@@ -33,3 +33,8 @@ console.log(friends);
 
 friends.shift();
 console.log(friends);
+
+//Checking the value index in array
+
+console.log(friends.indexOf("Ahmad"));
+console.log(friends.indexOf("Shahzad"));
