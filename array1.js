@@ -23,3 +23,13 @@ console.log(friends);
 //adding a new element in a array in starting
 friends.unshift("Younas");
 console.log(friends);
+
+//Remove the element from the array
+
+friends.pop();
+console.log(friends);
+
+//Remove the first element of array
+
+friends.shift();
+console.log(friends);
