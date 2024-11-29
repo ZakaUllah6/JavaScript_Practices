@@ -38,3 +38,8 @@ console.log(friends);
 
 console.log(friends.indexOf("Ahmad"));
 console.log(friends.indexOf("Shahzad"));
+
+//checking the value its includes in array
+
+console.log(friends.includes("Ahmad"));
+console.log(friends.includes("Zaka"));
