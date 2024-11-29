@@ -13,3 +13,13 @@ const age = function (years) {
 const years = [1999, 1988, 1976, 1966];
 
 console.log(age(years[0]));
+
+// Pushing Array
+
+friends.push("Shahzad");
+
+console.log(friends);
+
+//adding a new element in a array in starting
+friends.unshift("Younas");
+console.log(friends);
