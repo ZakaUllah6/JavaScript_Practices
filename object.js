@@ -26,3 +26,7 @@ console.log(zaka);
 zaka["job"] = "Software Engineering";
 
 console.log(zaka);
+
+console.log(
+  `${zaka.firstName} Has ${zaka.friends.length} friends and has best friend is ${zaka.friends[2]}`
+);
