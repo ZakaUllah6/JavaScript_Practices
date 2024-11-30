@@ -5,3 +5,6 @@ const zaka = {
   friends: ["Ahmad", "Sheraz", "Tayyab"],
 };
 console.log(zaka);
+// Accessing object through dot notation we cant accessing compute variable for compute we should use object expression
+console.log(zaka.firstName);
+console.log(zaka.friends);
