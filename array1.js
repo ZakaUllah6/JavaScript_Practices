@@ -43,3 +43,6 @@ console.log(friends.indexOf("Shahzad"));
 
 console.log(friends.includes("Ahmad"));
 console.log(friends.includes("Zaka"));
+
+if (friends.includes("Ahmad"));
+console.log("Yes you can also apply condition with .include function");
