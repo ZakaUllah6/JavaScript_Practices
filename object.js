@@ -30,3 +30,18 @@ console.log(zaka);
 console.log(
   `${zaka.firstName} Has ${zaka.friends.length} friends and has best friend is ${zaka.friends[2]}`
 );
+
+const ahmad = {
+  firstName: "Ahmad",
+  lastName: "Khan",
+  height: 5.8,
+  weight: 98,
+  calcBMI: function () {
+    this.bmi = this.weight / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+const result = ahmad.calcBMI();
+
+console.log(result);
