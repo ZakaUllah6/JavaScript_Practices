@@ -58,3 +58,9 @@ const khan = {
   },
 };
 console.log("The khan BMi Is " + khan.calcBMI());
+
+//for loops
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`weight lifting count ${rep} `);
+}
