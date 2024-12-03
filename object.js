@@ -76,3 +76,9 @@ const jonasArray = [
 for (let i = 0; i <= jonasArray.length - 1; i++) {
   console.log(jonasArray[i]);
 }
+
+// loop_of is specifically used for print elements in array
+
+const animal = ["dog", "elepant", "Cow", "Goat", "buffole"];
+
+for (var currElement of animal) console.log(currElement);
