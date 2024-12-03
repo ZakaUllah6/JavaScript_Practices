@@ -64,3 +64,15 @@ console.log("The khan BMi Is " + khan.calcBMI());
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`weight lifting count ${rep} `);
 }
+
+const jonasArray = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+
+for (let i = 0; i <= jonasArray.length - 1; i++) {
+  console.log(jonasArray[i]);
+}
