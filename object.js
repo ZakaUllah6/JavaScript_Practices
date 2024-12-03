@@ -82,3 +82,13 @@ for (let i = 0; i <= jonasArray.length - 1; i++) {
 const animal = ["dog", "elepant", "Cow", "Goat", "buffole"];
 
 for (var currElement of animal) console.log(currElement);
+
+// for in specifically used for index in array
+
+const animal1 = ["dog", "elepant", "Cow", "Goat", "buffole"];
+
+for (var index in animal) {
+  console.log(index);
+}
+
+for (var currElement in animal) console.log(animal[currElement]);
