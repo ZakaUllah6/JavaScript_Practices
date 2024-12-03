@@ -42,6 +42,19 @@ const ahmad = {
   },
 };
 
-const result = ahmad.calcBMI();
+ahmad.calcBMI();
 
-console.log(result);
+console.log("the ahmad BMI is = " + ahmad.bmi);
+
+const khan = {
+  firstName: "Zaka",
+  lastName: "Khan",
+  age: 2025 - 1997,
+  weight: 87,
+  height: 5.8,
+  calcBMI: function () {
+    const bmi = this.weight / this.height ** 2;
+    return bmi;
+  },
+};
+console.log("The khan BMi Is " + khan.calcBMI());
