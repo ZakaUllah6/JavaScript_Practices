@@ -38,10 +38,15 @@ console.log(arr);
 //Array destructuring From Objects
 // Picking first two elements from array in objects
 
-const [first, second] = restaurant.categories;
+let [first, second] = restaurant.categories;
 console.log(first, second);
 
 // Pick two elements from array but we want to skip element number 2 we need only 1 and 3 element.
 
 const [first1, , third] = restaurant.categories;
 console.log(first1, third);
+
+//Swiping the values in desturcturing array
+
+[first, second] = [second, first];
+console.log(first, second);
