@@ -38,83 +38,94 @@ const restaurant = {
     );
   },
 };
-restaurant.orderDelivery({
-  time: "11:40 am",
-  address: "325 Richardson",
-  mainIndex: 2,
-  starterIndex: 2,
-});
 
-//Array destructuring
+//Old method to combine two array with each other
+const arr = [6, 7, 8];
+const badArr = [1, 2, 3, arr[0], arr[1], arr[2]];
+console.log(badArr);
 
-const arr = [2, 5, 7];
-const [x, y, z] = arr;
-console.log(x, y, z);
-console.log(arr);
+//Using Spread operator and combine two array
 
-//Array destructuring From Objects
-// Picking first two elements from array in objects
+const newArr = [1, 2, 3, ...arr];
+console.log(newArr);
 
-let [first, second] = restaurant.categories;
-console.log(first, second);
+// restaurant.orderDelivery({
+//   time: "11:40 am",
+//   address: "325 Richardson",
+//   mainIndex: 2,
+//   starterIndex: 2,
+// });
 
-// Pick two elements from array but we want to skip element number 2 we need only 1 and 3 element.
+// //Array destructuring
 
-const [first1, , third] = restaurant.categories;
-console.log(first1, third);
+// const arr = [2, 5, 7];
+// const [x, y, z] = arr;
+// console.log(x, y, z);
+// console.log(arr);
 
-//Swiping the values in desturcturing array
+// //Array destructuring From Objects
+// // Picking first two elements from array in objects
 
-[first, second] = [second, first];
-console.log(first, second);
+// let [first, second] = restaurant.categories;
+// console.log(first, second);
 
-// Receving 2 returns values from function
-console.log(restaurant.order(2, 0));
-const [starter, main] = restaurant.order(3, 1);
-console.log(starter, main);
+// // Pick two elements from array but we want to skip element number 2 we need only 1 and 3 element.
 
-// How to do the Nested Array Desturcturing
-const arr1 = [2, 4, 6, [(4, 8, 9)]];
-const [a, , , b] = arr1;
-console.log(a, b);
+// const [first1, , third] = restaurant.categories;
+// console.log(first1, third);
 
-//Individual Values of Nested Array Destructured
+// //Swiping the values in desturcturing array
 
-const arr2 = [5, 6, [4, 3]];
-const [i, , [j, k]] = arr2;
-console.log(i, j, k);
+// [first, second] = [second, first];
+// console.log(first, second);
 
-//Object Distructuring
+// // Receving 2 returns values from function
+// console.log(restaurant.order(2, 0));
+// const [starter, main] = restaurant.order(3, 1);
+// console.log(starter, main);
 
-const { name, openingHours, categories } = restaurant;
-console.log(name, openingHours, categories);
+// // How to do the Nested Array Desturcturing
+// const arr1 = [2, 4, 6, [(4, 8, 9)]];
+// const [a, , , b] = arr1;
+// console.log(a, b);
 
-//Assiging Name to Object and Distructuring
+// //Individual Values of Nested Array Destructured
 
-const {
-  name: restaurantName,
-  openingHours: hours,
-  categories: tags,
-} = restaurant;
-console.log(restaurantName, hours, tags);
+// const arr2 = [5, 6, [4, 3]];
+// const [i, , [j, k]] = arr2;
+// console.log(i, j, k);
 
-//Default Values if the objects doesnt have the value
+// //Object Distructuring
 
-const { main1 = [], starterMenu: starter1 = [] } = restaurant;
-console.log(main1, starter1);
+// const { name, openingHours, categories } = restaurant;
+// console.log(name, openingHours, categories);
 
-// Mutating the values in Objects
+// //Assiging Name to Object and Distructuring
 
-let aa = 112;
-let ba = 120;
+// const {
+//   name: restaurantName,
+//   openingHours: hours,
+//   categories: tags,
+// } = restaurant;
+// console.log(restaurantName, hours, tags);
 
-const obj = { aa: 12, ba: 20, ca: 35 };
-({ aa, ba } = obj);
-console.log(aa, ba);
+// //Default Values if the objects doesnt have the value
 
-//Nesting Distructuring
+// const { main1 = [], starterMenu: starter1 = [] } = restaurant;
+// console.log(main1, starter1);
 
-const {
-  fri: { open: o, close: c },
-} = openingHours;
-console.log(o, c);
+// // Mutating the values in Objects
+
+// let aa = 112;
+// let ba = 120;
+
+// const obj = { aa: 12, ba: 20, ca: 35 };
+// ({ aa, ba } = obj);
+// console.log(aa, ba);
+
+// //Nesting Distructuring
+
+// const {
+//   fri: { open: o, close: c },
+// } = openingHours;
+// console.log(o, c);
