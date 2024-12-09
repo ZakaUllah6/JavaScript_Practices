@@ -72,6 +72,12 @@ for (const item of mainMenu) {
   console.log(item);
 }
 
+//Print Index with For of Loop
+
+for (const item of mainMenu.entries()) {
+  console.log(`${item[0] + 1}: ${item[1]}`);
+}
+
 // Rest Opertor
 // rest operator repack the rest element in array
 // rest operator
