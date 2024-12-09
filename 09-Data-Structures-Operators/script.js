@@ -75,7 +75,7 @@ console.log(i, j, k);
 const { name, openingHours, categories } = restaurant;
 console.log(name, openingHours, categories);
 
-//Assiging Name to Object Distructuring
+//Assiging Name to Object and Distructuring
 
 const {
   name: restaurantName,
@@ -83,3 +83,8 @@ const {
   categories: tags,
 } = restaurant;
 console.log(restaurantName, hours, tags);
+
+//Default Values if the objects doesnt have the value
+
+const { main1 = [], starterMenu: starter1 = [] } = restaurant;
+console.log(main1, starter1);
