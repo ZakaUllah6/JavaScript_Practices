@@ -52,6 +52,19 @@ console.log(newArr);
 //Print the array individually
 console.log(...newArr);
 
+const newMenu = [...restaurant.mainMenu, "Biryani"];
+console.log(newMenu);
+
+//Copy array with help of spread operator
+
+const newMainMenu = [...restaurant.mainMenu];
+console.log(newMainMenu);
+
+// joint 2 array
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu);
+
 // restaurant.orderDelivery({
 //   time: "11:40 am",
 //   address: "325 Richardson",
