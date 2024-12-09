@@ -49,6 +49,9 @@ console.log(badArr);
 const newArr = [1, 2, 3, ...arr];
 console.log(newArr);
 
+//Print the array individually
+console.log(...newArr);
+
 // restaurant.orderDelivery({
 //   time: "11:40 am",
 //   address: "325 Richardson",
