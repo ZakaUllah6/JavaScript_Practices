@@ -65,6 +65,17 @@ console.log(newMainMenu);
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(menu);
 
+//For OF Loop
+
+const mainMenu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+for (const item of mainMenu) {
+  console.log(item);
+}
+
+// Rest Opertor
+// rest operator repack the rest element in array
+// rest operator
+
 // restaurant.orderDelivery({
 //   time: "11:40 am",
 //   address: "325 Richardson",
