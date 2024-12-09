@@ -97,3 +97,10 @@ let ba = 120;
 const obj = { aa: 12, ba: 20, ca: 35 };
 ({ aa, ba } = obj);
 console.log(aa, ba);
+
+//Nesting Distructuring
+
+const {
+  fri: { open: o, close: c },
+} = openingHours;
+console.log(o, c);
