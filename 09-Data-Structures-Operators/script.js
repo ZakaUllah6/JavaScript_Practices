@@ -67,5 +67,19 @@ console.log(a, b);
 //Individual Values of Nested Array Destructured
 
 const arr2 = [5, 6, [4, 3]];
-const [i, , j, k] = arr2;
-console.log(i, [j, k]);
+const [i, , [j, k]] = arr2;
+console.log(i, j, k);
+
+//Object Distructuring
+
+const { name, openingHours, categories } = restaurant;
+console.log(name, openingHours, categories);
+
+//Assiging Name to Object Distructuring
+
+const {
+  name: restaurantName,
+  openingHours: hours,
+  categories: tags,
+} = restaurant;
+console.log(restaurantName, hours, tags);
