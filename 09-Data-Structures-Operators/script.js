@@ -88,3 +88,12 @@ console.log(restaurantName, hours, tags);
 
 const { main1 = [], starterMenu: starter1 = [] } = restaurant;
 console.log(main1, starter1);
+
+// Mutating the values in Objects
+
+let aa = 112;
+let ba = 120;
+
+const obj = { aa: 12, ba: 20, ca: 35 };
+({ aa, ba } = obj);
+console.log(aa, ba);
