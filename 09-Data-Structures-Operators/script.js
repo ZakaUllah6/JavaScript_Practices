@@ -29,7 +29,21 @@ const restaurant = {
       close: 24,
     },
   },
+  orderDelivery: function ({ time, address, mainIndex, starterIndex }) {
+    console.log(
+      `the order ${this.starterMenu[starterIndex]},
+      and ${this.mainMenu[mainIndex]},
+      the time of delivery is ${time},
+      and the address is ${address}`
+    );
+  },
 };
+restaurant.orderDelivery({
+  time: "11:40 am",
+  address: "325 Richardson",
+  mainIndex: 2,
+  starterIndex: 2,
+});
 
 //Array destructuring
 
