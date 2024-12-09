@@ -58,3 +58,14 @@ console.log(first, second);
 console.log(restaurant.order(2, 0));
 const [starter, main] = restaurant.order(3, 1);
 console.log(starter, main);
+
+// How to do the Nested Array Desturcturing
+const arr1 = [2, 4, 6, [(4, 8, 9)]];
+const [a, , , b] = arr1;
+console.log(a, b);
+
+//Individual Values of Nested Array Destructured
+
+const arr2 = [5, 6, [4, 3]];
+const [i, , j, k] = arr2;
+console.log(i, [j, k]);
