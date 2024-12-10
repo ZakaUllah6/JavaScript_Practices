@@ -78,6 +78,12 @@ for (const item of mainMenu.entries()) {
   console.log(`${item[0] + 1}: ${item[1]}`);
 }
 
+//Distructuring the for of loop
+
+for (const [i, el] of mainMenu.entries()) {
+  console.log(`${i + 1} ${el}`);
+}
+
 // Rest Opertor
 // rest operator repack the rest element in array
 // rest operator
