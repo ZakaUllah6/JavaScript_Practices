@@ -82,7 +82,33 @@ for (const item of mainMenu.entries()) {
 
 for (const [i, el] of mainMenu.entries()) {
   console.log(`${i + 1} ${el}`);
+  // console.log(i + 1, el);
 }
+
+//Set are only contains new elements in set
+
+const orderSet = new Set([
+  "zaka",
+  "tayyab",
+  "shan zab",
+  "zaka",
+  "ahmad",
+  "tayyab",
+  "zaka",
+]);
+
+console.log(orderSet);
+console.log(new Set("Zaka"));
+//Check the element with has in set its works like includes in array
+console.log(orderSet.has("zaka"));
+console.log(orderSet.has("Shahzad"));
+//Adding the elements in set
+console.log(orderSet.add("Sheraz"));
+console.log(orderSet.add("Sheraz"));
+console.log(orderSet.add("khan"));
+//Deleting the elements from set
+
+console.log(orderSet.delete("khan"));
 
 // Rest Opertor
 // rest operator repack the rest element in array
