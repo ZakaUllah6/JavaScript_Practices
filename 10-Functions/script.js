@@ -12,3 +12,5 @@ const createBooking = function (flightNum, numPessenger = 1, price = 199) {
   console.log(booking);
 };
 createBooking("Lh123");
+createBooking("Bus123");
+createBooking("Air123");
