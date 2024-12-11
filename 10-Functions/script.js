@@ -2,7 +2,11 @@
 
 const bookings = [];
 
-const createBooking = function (flightNum, numPessenger = 1, price = 199) {
+const createBooking = function (
+  flightNum,
+  numPessenger = 1,
+  price = 199 * numPessenger
+) {
   const booking = {
     flightNum,
     numPessenger,
@@ -11,6 +15,6 @@ const createBooking = function (flightNum, numPessenger = 1, price = 199) {
   bookings.push(booking);
   console.log(booking);
 };
-createBooking("Lh123");
-createBooking("Bus123");
-createBooking("Air123");
+createBooking("Lh1231", "1");
+createBooking("Bus1232", "2");
+createBooking("Air1235", "5");
