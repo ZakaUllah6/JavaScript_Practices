@@ -24,17 +24,27 @@ createBooking("Air1235", "5");
 const flight = "LH123";
 const zaka = {
   name: "Zaka khan",
-  passport: "123456789",
+  passport: 123456789,
 };
 
 const checkInn = function (flightNum, passenger) {
   flightNum = "LH789";
   passenger.name = "Mr. " + passenger.name;
-
   if (passenger.passport === 123456789) {
-    alert("Your CheckIn");
-  } else alert("wrong passport");
+    alert("Your Checked In ");
+  } else {
+    alert("Your not Checking In");
+  }
 };
+// console.log(flight, zaka);
+// console.log(flight);
+// console.log(zaka);
+
+const newPassoport = function (person) {
+  person.passport = Math.trunc(Math.random() * 100000000000000000);
+
+  console.log(person.passport);
+};
+
+console.log(newPassoport(zaka));
 console.log(flight, zaka);
-console.log(flight);
-console.log(zaka);
