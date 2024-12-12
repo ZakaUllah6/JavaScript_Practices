@@ -48,3 +48,25 @@ const newPassoport = function (person) {
 
 console.log(newPassoport(zaka));
 console.log(flight, zaka);
+
+//Let's Try High Order Function
+//Hello Java Script
+const oneWord = function (str) {
+  return str.replace(/ /g, "").toLowerCase();
+};
+const firstWord = function (str) {
+  const [first, ...other] = str.split(" ");
+  return [first.toUpperCase(), ...other].join(" ");
+};
+
+//A Function that receives another function as an argument, that returns a  new function, or Both
+//This is High Order Function
+
+const transfomer = function (str, fn) {
+  console.log(`This is original string : ${str}`);
+  console.log(`This is transfomer string: ${fn(str)}`);
+  console.log(`The Function name is ${fn.name}`);
+};
+
+console.log(transfomer("hello This is JavaScript", oneWord));
+console.log(transfomer("hello This is JavaScript", firstWord));
