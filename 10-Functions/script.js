@@ -70,3 +70,11 @@ const transfomer = function (str, fn) {
 
 console.log(transfomer("hello This is JavaScript", oneWord));
 console.log(transfomer("hello This is JavaScript", firstWord));
+
+// Function Return Function
+
+const greet = function (greeting) {
+  return function (name) {
+    console.log(``);
+  };
+};
