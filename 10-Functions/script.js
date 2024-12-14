@@ -75,6 +75,9 @@ console.log(transfomer("hello This is JavaScript", firstWord));
 
 const greet = function (greeting) {
   return function (name) {
-    console.log(``);
+    console.log(`${greeting} ${name}`);
   };
 };
+const greeter = greet("Hey");
+greeter("Zaka");
+greeter("Anis");
