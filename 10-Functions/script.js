@@ -93,3 +93,7 @@ const greeting = (greetings) => {
 const trying = greeting("Bye");
 trying("Tayyab");
 trying("Sheraz");
+
+//
+const greetArr = (greeting) => (name) => console.log(`${greetings} ${names} `);
+greeter("Zaka");
