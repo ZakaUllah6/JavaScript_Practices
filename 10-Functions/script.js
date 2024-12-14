@@ -81,3 +81,13 @@ const greet = function (greeting) {
 const greeter = greet("Hey");
 greeter("Zaka");
 greeter("Anis");
+
+//Function return function through arrow function
+
+const greeting = (greetings) => {
+  return function (names) {
+    console.log("${greetings} ${names}");
+  };
+};
+
+const trying = greeting("Bye");
