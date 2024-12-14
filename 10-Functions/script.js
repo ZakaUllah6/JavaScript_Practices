@@ -86,8 +86,10 @@ greeter("Anis");
 
 const greeting = (greetings) => {
   return function (names) {
-    console.log("${greetings} ${names}");
+    console.log(`${greetings} ${names} `);
   };
 };
 
 const trying = greeting("Bye");
+trying("Tayyab");
+trying("Sheraz");
