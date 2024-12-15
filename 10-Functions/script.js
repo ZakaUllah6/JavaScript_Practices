@@ -112,16 +112,35 @@ greeter("Zaka");
 
 //The Call and Apply Methods
 
-const lufthansa = {
+// const lufthansa = {
+//   airline: "Lufthansa",
+//   iatacode: "LH",
+//   booking: [],
+//   book(flightNum, name) {
+//     console.log(`The Flight Number is ${flightNum} and the passenger name is ${name}
+//       The airline is ${this.airline} the iatacode is ${this.iatacode}`);
+//     this.booking.push({
+//       flight: `the flight Number is ${flightNum} and ${name}`,
+//     });
+//   },
+// };
+// lufthansa.book("LH230", "Zaka");
+
+const Lufthansa = {
   airline: "Lufthansa",
   iatacode: "LH",
-  booking: [],
+  bookingss: [],
+
   book(flightNum, name) {
-    console.log(`The Flight Number is ${flightNum} and the passenger name is ${name}
-      The airline is ${this.airline} the iatacode is ${this.iatacode}`);
-    this.booking.push({
-      flight: `the flight Number is ${flightNum} and ${name}`,
+    console.log(
+      `The Passaneger Name is ${name}, the Flight Number is ${flightNum}
+      Airline is Name is ${this.airline} and iatacode is ${this.iatacode}`
+    );
+    this.bookingss.push({
+      flight: `The Passaneger Name is ${name}, the Flight Number is ${flightNum} 
+      and the iatacode is ${this.iatacode}`,
     });
   },
 };
-lufthansa.book("LH230", "Zaka");
+Lufthansa.book("LH230", "Zaka");
+console.log(Lufthansa);
