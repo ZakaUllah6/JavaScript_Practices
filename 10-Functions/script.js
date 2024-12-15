@@ -148,16 +148,23 @@ const pIA = {
   bookings: [],
 };
 
-const book = Lufthansa.book;
-
 const airBlue = {
   airline: "AirBlue",
   iatacode: "AB",
   bookings: [],
 };
+
+//Call Method
+const book = Lufthansa.book;
 Lufthansa.book("LH230", "Zaka");
 book.call(pIA, "236", "Tayyab Khan");
 book.call(airBlue, "999", "Sheraz");
 // console.log(pIA);
 // console.log(airBlue);
+
+//We can also use apply method instead using call methods
+//but the apply can take only array
+const flighData = ["583", "Cooper Mary"];
+book.apply(airBlue, flighData);
+console.log(airBlue);
 console.log(Lufthansa);
