@@ -189,3 +189,9 @@ const bookPIA23 = book.bind(pIA, 786);
 bookPIA23("Asif Ali Zardari");
 bookPIA23("Bilal");
 bookPIA23("Maryam Nawaz");
+
+//Immediately Invoked Function Expression IIFE
+
+(function () {
+  console.log("This Function will be never Run again ");
+})();
