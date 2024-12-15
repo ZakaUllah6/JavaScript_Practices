@@ -141,6 +141,7 @@ const Lufthansa = {
     });
   },
 };
+const book = Lufthansa.book;
 
 const pIA = {
   airline: "PIA",
@@ -155,7 +156,7 @@ const airBlue = {
 };
 
 //Call Method
-const book = Lufthansa.book;
+
 Lufthansa.book("LH230", "Zaka");
 book.call(pIA, "236", "Tayyab Khan");
 book.call(airBlue, "999", "Sheraz");
@@ -173,3 +174,18 @@ book.apply(airBlue, flighData);
 book.call(airBlue, ...flighData);
 console.log(airBlue);
 console.log(Lufthansa);
+
+//Blind Method
+
+const bookPIA = book.bind(pIA);
+const bookAB = book.bind(airBlue);
+const bookLH = book.bind(Lufthansa);
+
+bookPIA("29", "Nawaz Sharif");
+
+//Specify For Flight
+
+const bookPIA23 = book.bind(pIA, 786);
+bookPIA23("Asif Ali Zardari");
+bookPIA23("Bilal");
+bookPIA23("Maryam Nawaz");
