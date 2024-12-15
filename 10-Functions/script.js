@@ -109,3 +109,19 @@ greeter("Zaka");
 // greeter("Fa");
 // greeter("niaz m");
 // greeter("Khaqan");
+
+//The Call and Apply Methods
+
+const lufthansa = {
+  airline: "Lufthansa",
+  iatacode: "LH",
+  booking: [],
+  book(flightNum, name) {
+    console.log(`The Flight Number is ${flightNum} and the passenger name is ${name}
+      The airline is ${this.airline} the iatacode is ${this.iatacode}`);
+    this.booking.push({
+      flight: `the flight Number is ${flightNum} and ${name}`,
+    });
+  },
+};
+lufthansa.book("LH230", "Zaka");
