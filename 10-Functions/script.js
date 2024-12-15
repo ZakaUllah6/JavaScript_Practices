@@ -133,12 +133,12 @@ const Lufthansa = {
 
   book(flightNum, name) {
     console.log(
-      `The Passaneger Name is ${name}, the Flight Number is ${flightNum}
-      Airline is Name is ${this.airline} and iatacode is ${this.iatacode}`
+      ` ${name} book a seat on ${this.airline} flight Nmber $${this.iatacode} ${flightNum}
+       `
     );
     this.bookingss.push({
-      flight: `The Passaneger Name is ${name}, the Flight Number is ${flightNum} 
-      and the iatacode is ${this.iatacode}`,
+      flight: `flight Nmber $${this.iatacode} ${flightNum}, `,
+      name,
     });
   },
 };
