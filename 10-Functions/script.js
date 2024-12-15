@@ -133,17 +133,14 @@ const Lufthansa = {
 
   book(flightNum, name) {
     console.log(
-      ` ${name} book a seat on ${this.airline} flight Nmber $${this.iatacode}${flightNum}
-       `
+      ` ${name} book a seat on ${this.airline} flight Nmber ${this.iatacode}${flightNum}`
     );
     this.bookings.push({
-      flight: `flight Nmber $${this.iatacode} ${flightNum}`,
+      flight: `${this.iatacode} ${flightNum}`,
       name,
     });
   },
 };
-Lufthansa.book("LH230", "Zaka");
-console.log(Lufthansa);
 
 const pIA = {
   airline: "PIA",
@@ -153,5 +150,14 @@ const pIA = {
 
 const book = Lufthansa.book;
 
+const airBlue = {
+  airline: "AirBlue",
+  iatacode: "AB",
+  bookings: [],
+};
+Lufthansa.book("LH230", "Zaka");
 book.call(pIA, "236", "Tayyab Khan");
-console.log(pIA);
+book.call(airBlue, "999", "Sheraz");
+// console.log(pIA);
+// console.log(airBlue);
+console.log(Lufthansa);
