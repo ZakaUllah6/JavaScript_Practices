@@ -195,3 +195,9 @@ bookPIA23("Maryam Nawaz");
 (function () {
   console.log("This Function will be never Run again ");
 })();
+
+// Arrow Immediately Invoked Function Expression
+
+(() => {
+  console.log("This Function also Run again");
+})();
