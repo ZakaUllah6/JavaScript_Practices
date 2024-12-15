@@ -103,3 +103,4 @@ greeter("Khzaifa");
 greeter("Afxal");
 greeter("Khaqan");
 greeter("jamal");
+greeter("faraz");
