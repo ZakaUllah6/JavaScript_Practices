@@ -97,3 +97,4 @@ trying("Sheraz");
 //
 const greetArr = (greeting) => (name) => console.log(`${greetings} ${names} `);
 greeter("Zaka");
+greeter("kHan");
