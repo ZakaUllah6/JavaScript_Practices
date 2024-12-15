@@ -164,7 +164,12 @@ book.call(airBlue, "999", "Sheraz");
 
 //We can also use apply method instead using call methods
 //but the apply can take only array
+//But apply method is old methods mostly people dnt use it
 const flighData = ["583", "Cooper Mary"];
 book.apply(airBlue, flighData);
+
+//Instead Apply we will use spread operator the spread other pull up the data
+
+book.call(airBlue, ...flighData);
 console.log(airBlue);
 console.log(Lufthansa);
