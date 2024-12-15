@@ -100,3 +100,4 @@ greeter("Zaka");
 greeter("kHan");
 greeter("ali");
 greeter("Khzaifa");
+greeter("Afxal");
