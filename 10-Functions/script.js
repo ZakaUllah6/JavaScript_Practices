@@ -201,3 +201,18 @@ bookPIA23("Maryam Nawaz");
 (() => {
   console.log("This Function also Run again");
 })();
+
+//Closure
+
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passenger`);
+  };
+};
+const booker = secureBooking();
+booker();
+booker();
+booker();
