@@ -94,7 +94,13 @@ console.log(accounts);
 //filter Method
 const withdrawal = account1.movements.filter((mov) => mov < 0);
 console.log(withdrawal);
-console.log(account1.movements);
+
+// Reduced Method
+const balance = account1.movements.reduce(function (acc, curr, i, arr) {
+  console.log(`the current acc ${acc} and the current value ${curr}`);
+  return acc + curr;
+}, 0);
+console.log(balance);
 /* const dogs = [2, 5, 3, 6, 7, 1, 3, 2, 7, 8];
 
 // const dogsAge = function (dogs) {
