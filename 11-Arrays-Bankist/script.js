@@ -79,6 +79,11 @@ const displayMovements = function (movements) {
 };
 displayMovements(account1.movements);
 
+const calcPrintBalance = function (mov) {
+  const balance = mov.reduce((acc, curr) => acc + curr, 0);
+  labelBalance.textContent = `${balance} EUR`;
+};
+calcPrintBalance(account1.movements);
 const createUserName = function (accs) {
   accs.forEach(function (acc) {
     acc.username = acc.owner
@@ -91,16 +96,28 @@ const createUserName = function (accs) {
 createUserName(accounts);
 console.log(accounts);
 
-//filter Method
-const withdrawal = account1.movements.filter((mov) => mov < 0);
-console.log(withdrawal);
+/////////////////////////////////////////////////
+/////////////////////////////////////////////////
+// LECTURES
 
-// Reduced Method
-const balance = account1.movements.reduce(function (acc, curr, i, arr) {
-  console.log(`the current acc ${acc} and the current value ${curr}`);
-  return acc + curr;
-}, 0);
-console.log(balance);
+const currencies = new Map([
+  ["USD", "United States dollar"],
+  ["EUR", "Euro"],
+  ["GBP", "Pound sterling"],
+]);
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+//filter Method
+// const withdrawal = account1.movements.filter((mov) => mov < 0);
+// console.log(withdrawal);
+
+// // Reduced Method
+// const balance = account1.movements.reduce(function (acc, curr, i, arr) {
+//   console.log(`the current acc ${acc} and the current value ${curr}`);
+//   return acc + curr;
+// }, 0);
+// console.log(balance);
 /* const dogs = [2, 5, 3, 6, 7, 1, 3, 2, 7, 8];
 
 // const dogsAge = function (dogs) {
@@ -120,16 +137,5 @@ console.log(balance);
 
 // const movementsToUsd = account1.movements.map((movements) => movements * 1.1);
 // console.log(movementsToUsd); */
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-// LECTURES
-
-const currencies = new Map([
-  ["USD", "United States dollar"],
-  ["EUR", "Euro"],
-  ["GBP", "Pound sterling"],
-]);
-
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
