@@ -79,6 +79,36 @@ const displayMovements = function (movements) {
 };
 displayMovements(account1.movements);
 
+const createUserName = function (accs) {
+  accs.forEach(function (acc) {
+    acc.username = acc.owner
+      .toLowerCase()
+      .split(" ")
+      .map((name) => name[0])
+      .join("");
+  });
+};
+createUserName(accounts);
+console.log(accounts);
+/* const dogs = [2, 5, 3, 6, 7, 1, 3, 2, 7, 8];
+
+// const dogsAge = function (dogs) {
+//   dogs.forEach(function (age, i) {
+//     if (age >= 3) {
+//       console.log(
+//         `the dog age ${
+//           i + 1
+//         }: ${age} years greater or equall to 3 so its will adult`
+//       );
+//     } else {
+//       console.log(`${i + 1}:${age} years old its puppy`);
+//     }
+//   });
+// };
+// dogsAge(dogs);
+
+// const movementsToUsd = account1.movements.map((movements) => movements * 1.1);
+// console.log(movementsToUsd); */
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
