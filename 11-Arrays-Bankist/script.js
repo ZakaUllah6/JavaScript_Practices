@@ -90,6 +90,12 @@ const calcDisplaySummary = function (movements) {
     .reduce((acc, mov) => acc + mov, 0);
   // console.log(incomes);
   labelSumIn.textContent = `${incomes}€`;
+
+  const outgoing = movements
+    .filter((mov) => mov < 0)
+    .reduce((acc, mov) => acc - mov, 0);
+  // console.log(outgoing);
+  labelSumOut.textContent = `${outgoing}€`;
 };
 calcDisplaySummary(account1.movements);
 
