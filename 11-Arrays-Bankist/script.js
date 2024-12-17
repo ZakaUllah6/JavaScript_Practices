@@ -96,6 +96,14 @@ const createUserName = function (accs) {
 createUserName(accounts);
 console.log(accounts);
 
+const euroToUSD = 1.1;
+
+const totalDepositUsd = account1.movements
+  .filter((mov) => mov > 0)
+  .map((mov) => mov * euroToUSD)
+  .reduce((acc, curr) => acc + curr, 0);
+
+console.log(totalDepositUsd);
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
@@ -138,6 +146,7 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // const movementsToUsd = account1.movements.map((movements) => movements * 1.1);
 // console.log(movementsToUsd); */
 
+//Find The maxmium value
 const max = movements.reduce((acc, mov) => {
   if (acc > mov) return acc;
   else return mov;
