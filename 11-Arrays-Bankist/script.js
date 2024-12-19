@@ -121,7 +121,7 @@ createUserName(accounts);
 console.log(accounts);
 
 //Event Hanlder
-let currentAccount;
+
 // btnLogin.addEventListener("click", function (e) {
 //   e.preventDefault();
 
@@ -131,6 +131,7 @@ let currentAccount;
 //   console.log(currentAccount);
 // });
 // //
+let currentAccount;
 btnLogin.addEventListener("click", function (e) {
   // Prevent form from submitting
   e.preventDefault();
@@ -138,6 +139,10 @@ btnLogin.addEventListener("click", function (e) {
     (acc) => acc.username === inputLoginUsername.value
   );
   console.log(currentAccount);
+
+  if (currentAccount.pin === Number(inputLoginPin.value)) {
+    console.log("lOGIN");
+  }
 });
 //
 const euroToUSD = 1.1;
