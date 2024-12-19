@@ -159,7 +159,6 @@ const totalDepositUsd = account1.movements
   .map((mov) => mov * euroToUSD)
   .reduce((acc, curr) => acc + curr, 0);
 
-console.log(totalDepositUsd);
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
