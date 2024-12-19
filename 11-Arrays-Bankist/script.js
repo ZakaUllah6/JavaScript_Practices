@@ -77,7 +77,6 @@ const displayMovements = function (movements) {
     containerMovements.insertAdjacentHTML("afterbegin", html);
   });
 };
-displayMovements(account1.movements);
 
 const calcPrintBalance = function (mov) {
   const balance = mov.reduce((acc, curr) => acc + curr, 0);
@@ -105,7 +104,6 @@ const calcDisplaySummary = function (movements) {
   console.log(interest);
   labelSumInterest.textContent = `${interest}`;
 };
-calcDisplaySummary(account1.movements);
 
 calcPrintBalance(account1.movements);
 const createUserName = function (accs) {
@@ -143,10 +141,14 @@ btnLogin.addEventListener("click", function (e) {
   if (currentAccount?.pin === Number(inputLoginPin.value)) {
     // Display UI and message
     labelWelcome.textContent = `Welcome ${currentAccount.owner.split(" ")[0]}`;
-    // Display movements
     containerApp.style.opacity = 100;
+
+    // Display movements
+    displayMovements(currentAccount.movements);
     // Display balance
+    calcPrintBalance(currentAccount.movements);
     // Display summary
+    calcDisplaySummary(currentAccount.movements);
   }
 });
 //
