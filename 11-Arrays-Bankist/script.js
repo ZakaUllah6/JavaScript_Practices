@@ -116,7 +116,6 @@ const createUserName = function (accs) {
   });
 };
 createUserName(accounts);
-console.log(accounts);
 
 //Event Hanlder
 
