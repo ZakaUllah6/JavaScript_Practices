@@ -121,12 +121,25 @@ createUserName(accounts);
 console.log(accounts);
 
 //Event Hanlder
+let currentAccount;
+// btnLogin.addEventListener("click", function (e) {
+//   e.preventDefault();
 
+//   currentAccount = accounts.find(
+//     (acc) => acc.userame === inputLoginUsername.value
+//   );
+//   console.log(currentAccount);
+// });
+// //
 btnLogin.addEventListener("click", function (e) {
+  // Prevent form from submitting
   e.preventDefault();
-  console.log("LOGIN");
+  currentAccount = accounts.find(
+    (acc) => acc.username === inputLoginUsername.value
+  );
+  console.log(currentAccount);
 });
-
+//
 const euroToUSD = 1.1;
 
 const totalDepositUsd = account1.movements
