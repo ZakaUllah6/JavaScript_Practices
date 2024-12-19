@@ -144,6 +144,7 @@ btnLogin.addEventListener("click", function (e) {
     // Display UI and message
     labelWelcome.textContent = `Welcome ${currentAccount.owner.split(" ")[0]}`;
     // Display movements
+    containerApp.style.opacity = 100;
     // Display balance
     // Display summary
   }
