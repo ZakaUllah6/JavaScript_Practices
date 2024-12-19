@@ -85,7 +85,7 @@ for (const [i, el] of mainMenu.entries()) {
   // console.log(i + 1, el);
 }
 
-//Set are only contains new elements in set
+//Set are only contains new elements in set and set doesnot have the index's
 
 const orderSet = new Set([
   "zaka",

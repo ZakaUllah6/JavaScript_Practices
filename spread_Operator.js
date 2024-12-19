@@ -18,3 +18,7 @@ let vegatables = ["Lady Finger", "salad", "potato"];
 let max = [...fruits, ...vegatables].join(",").toUpperCase();
 
 console.log(max);
+
+const arr = [5, 6, 7];
+// const badNewArr = [1, 2, 3];
+console.log(arr);
