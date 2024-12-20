@@ -143,6 +143,7 @@ btnLogin.addEventListener("click", function (e) {
 
     //Clear Input field
     inputLoginUsername.value = inputLoginPin.value = " ";
+    inputLoginPin.blur();
 
     // Display movements
     displayMovements(currentAccount.movements);
