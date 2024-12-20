@@ -163,6 +163,8 @@ btnLogin.addEventListener("click", function (e) {
     // calcPrintBalance(currentAccount);
     // // Display summary
     // calcDisplaySummary(currentAccount);
+
+    //Update UI
     updateUI(currentAccount);
   }
 });
@@ -193,6 +195,8 @@ btnTransfer.addEventListener("click", function (e) {
     //Doing the Transfer
     currentAccount.movements.push(-amount);
     receiverAcc.movements.push(amount);
+
+    updateUI(currentAccount);
   }
 });
 const euroToUSD = 1.1;
