@@ -178,7 +178,7 @@ btnTransfer.addEventListener("click", function (e) {
     (acc) => acc.username === inputTransferTo.value
   );
 
-  console.log(receiverAcc);
+  inputTransferAmount.value = inputTransferTo.value = "";
 
   // if (
   //   amount > 0 &&
