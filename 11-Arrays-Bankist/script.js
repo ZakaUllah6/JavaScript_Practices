@@ -141,6 +141,9 @@ btnLogin.addEventListener("click", function (e) {
     labelWelcome.textContent = `Welcome ${currentAccount.owner.split(" ")[0]}`;
     containerApp.style.opacity = 100;
 
+    //Clear Input field
+    inputLoginUsername.value = inputLoginPin.value = " ";
+
     // Display movements
     displayMovements(currentAccount.movements);
     // Display balance
