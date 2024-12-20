@@ -120,6 +120,15 @@ const createUserName = function (accs) {
 };
 createUserName(accounts);
 
+const updateUI = function (acc) {
+  // Display movements
+  displayMovements(acc.movements);
+  // Display balance
+  calcPrintBalance(acc);
+  // Display summary
+  calcDisplaySummary(acc);
+};
+
 //Event Hanlder
 
 // btnLogin.addEventListener("click", function (e) {
@@ -148,12 +157,13 @@ btnLogin.addEventListener("click", function (e) {
     inputLoginUsername.value = inputLoginPin.value = " ";
     inputLoginPin.blur();
 
-    // Display movements
-    displayMovements(currentAccount.movements);
-    // Display balance
-    calcPrintBalance(currentAccount);
-    // Display summary
-    calcDisplaySummary(currentAccount);
+    // // Display movements
+    // displayMovements(currentAccount.movements);
+    // // Display balance
+    // calcPrintBalance(currentAccount);
+    // // Display summary
+    // calcDisplaySummary(currentAccount);
+    updateUI(currentAccount);
   }
 });
 //
@@ -239,5 +249,5 @@ const max = movements.reduce((acc, mov) => {
   if (acc > mov) return acc;
   else return mov;
 }, movements[0]);
-console.log(max);
+// console.log(max);
 /////////////////////////////////////////////////
