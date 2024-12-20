@@ -101,7 +101,7 @@ const calcDisplaySummary = function (acc) {
     .map((deposit) => (deposit * acc.interestRate) / 100)
     .filter((deposit) => deposit > 1)
     .reduce((acc, int) => acc + int, 0);
-  console.log(interest);
+
   labelSumInterest.textContent = `${interest}`;
 };
 
@@ -208,5 +208,5 @@ const max = movements.reduce((acc, mov) => {
   if (acc > mov) return acc;
   else return mov;
 }, movements[0]);
-console.log(max);
+
 /////////////////////////////////////////////////
