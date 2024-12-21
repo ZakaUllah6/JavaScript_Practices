@@ -199,6 +199,11 @@ btnTransfer.addEventListener("click", function (e) {
     updateUI(currentAccount);
   }
 });
+
+btnClose.addEventListener("click", function (e) {
+  e.preventDefault();
+  console.log("Delete");
+});
 const euroToUSD = 1.1;
 
 const totalDepositUsd = account1.movements
