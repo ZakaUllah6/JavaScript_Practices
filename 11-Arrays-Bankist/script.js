@@ -203,6 +203,12 @@ btnTransfer.addEventListener("click", function (e) {
 btnClose.addEventListener("click", function (e) {
   e.preventDefault();
   console.log("Delete");
+
+  if (
+    inputCloseUsername.value === currentAccount.username &&
+    inputClosePin.value === Number(currentAccount).pin
+  ) {
+  }
 });
 const euroToUSD = 1.1;
 
