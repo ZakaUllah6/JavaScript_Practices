@@ -294,4 +294,5 @@ const max = movements.reduce((acc, mov) => {
 console.log("Creating the functionality ");
 console.log("Banking app ");
 console.log("App");
+console.log("Creating");
 /////////////////////////////////////////////////
