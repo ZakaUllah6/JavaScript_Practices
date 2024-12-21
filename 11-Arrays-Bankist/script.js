@@ -291,8 +291,8 @@ const max = movements.reduce((acc, mov) => {
   if (acc > mov) return acc;
   else return mov;
 }, movements[0]);
-console.log("Creating the functionality ");
-console.log("Banking app ");
-console.log("App");
-console.log("Creating");
+// console.log("Creating the functionality ");
+// console.log("Banking app ");
+// console.log("App");
+// console.log("Creating");
 /////////////////////////////////////////////////
