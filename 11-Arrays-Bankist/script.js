@@ -223,6 +223,8 @@ btnLoan.addEventListener("click", function (e) {
     amount > 0 &&
     currentAccount.movements.some((mov) => mov >= amount * 0.1)
   ) {
+    //pushing the amoun to Array
+    currentAccount.movements.push(accounts);
     //update the UI
     updateUI;
   }
