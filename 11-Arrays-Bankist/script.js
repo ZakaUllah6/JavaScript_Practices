@@ -214,8 +214,24 @@ btnTransfer.addEventListener("click", function (e) {
 //   }
 // });
 
+// btnLoan.addEventListener("click", function (e) {
+//   e.defaultPrevented();
+
+//   const amount = Number(inputLoanAmount.value);
+
+//   if (
+//     amount > 0 &&
+//     currentAccount.movements.some((mov) => mov >= amount * 0.1)
+//   ) {
+//     //pushing the amoun to Array
+//     currentAccount.movements.push(accounts);
+//     //update the UI
+//     updateUI(currentAccount);
+//   }
+// });
+
 btnLoan.addEventListener("click", function (e) {
-  e.defaultPrevented();
+  e.preventDefault();
 
   const amount = Number(inputLoanAmount.value);
 
@@ -223,11 +239,13 @@ btnLoan.addEventListener("click", function (e) {
     amount > 0 &&
     currentAccount.movements.some((mov) => mov >= amount * 0.1)
   ) {
-    //pushing the amoun to Array
-    currentAccount.movements.push(accounts);
-    //update the UI
-    updateUI;
+    // Add movement
+    currentAccount.movements.push(amount);
+
+    // Update UI
+    updateUI(currentAccount);
   }
+  inputLoanAmount.value = "";
 });
 
 btnClose.addEventListener("click", function (e) {
