@@ -329,4 +329,7 @@ const max = movements.reduce((acc, mov) => {
 // console.log("App");
 // console.log("Creating");
 
+//Flat
+const arr = [1, 2, [4, 5], 6, 9];
+console.log(arr.flat());
 /////////////////////////////////////////////////
