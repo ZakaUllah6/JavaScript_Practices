@@ -332,4 +332,7 @@ const max = movements.reduce((acc, mov) => {
 //Flat
 const arr = [1, 2, [4, 5], 6, 9];
 console.log(arr.flat());
+
+const arrDeep = [1, 2, [4, 7, [5, 9, 8]], 6, 9];
+console.log(arrDeep.flat(2));
 /////////////////////////////////////////////////
