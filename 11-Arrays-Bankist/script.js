@@ -344,4 +344,10 @@ console.log(allMovements);
 
 const allBalance = allMovements.reduce((acc, curr) => acc + curr, 0);
 console.log(allBalance);
+
+const accountMovement = accounts
+  .flatMap((acc) => acc.movements)
+  .reduce((acc, curr) => acc + curr, 0);
+
+console.log(accountMovement);
 /////////////////////////////////////////////////
