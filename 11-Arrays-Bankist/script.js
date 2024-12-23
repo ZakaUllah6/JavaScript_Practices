@@ -335,4 +335,13 @@ console.log(arr.flat());
 
 const arrDeep = [1, 2, [4, 7, [5, 9, 8]], 6, 9];
 console.log(arrDeep.flat(2));
+
+const accountMovements = accounts.map((acc) => acc.movements);
+console.log(accountMovements);
+
+const allMovements = accountMovements.flat();
+console.log(allMovements);
+
+const allBalance = allMovements.reduce((acc, curr) => acc + curr, 0);
+console.log(allBalance);
 /////////////////////////////////////////////////
