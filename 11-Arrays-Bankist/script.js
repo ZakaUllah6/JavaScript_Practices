@@ -355,7 +355,7 @@ console.log(accountMovement);
 const owner = accounts.flatMap((acc) => acc.owner).sort();
 console.log(owner);
 
-//Sort the number
+//Sort the number in the asceding order
 
 const number = accounts
   .flatMap((acc) => acc.movements)
@@ -364,4 +364,14 @@ const number = accounts
     if (a < b) return -1;
   });
 console.log(number);
+
+//Sort the number in the Desceding order
+
+const desNumber = accounts
+  .flatMap((acc) => acc.movements)
+  .sort((a, b) => {
+    if (a < b) return 1;
+    if (a > b) return -1;
+  });
+console.log(desNumber);
 /////////////////////////////////////////////////
