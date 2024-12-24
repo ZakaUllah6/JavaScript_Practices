@@ -149,7 +149,7 @@ btnLogin.addEventListener("click", function (e) {
     (acc) => acc.username === inputLoginUsername.value
   );
 
-  if (currentAccount?.pin === Number(inputLoginPin.value)) {
+  if (currentAccount?.pin === +inputLoginPin.value) {
     // Display UI and message
     labelWelcome.textContent = `Welcome ${currentAccount.owner.split(" ")[0]}`;
     containerApp.style.opacity = 100;
@@ -174,7 +174,7 @@ btnLogin.addEventListener("click", function (e) {
 
 btnTransfer.addEventListener("click", function (e) {
   e.preventDefault();
-  const amount = Number(inputTransferAmount.value);
+  const amount = +inputTransferAmount.value;
   const receiverAcc = accounts.find(
     (acc) => acc.username === inputTransferTo.value
   );
@@ -206,7 +206,7 @@ btnTransfer.addEventListener("click", function (e) {
 
 //   if (
 //     inputCloseUsername.value === currentAccount.username &&
-//     Number(inputClosePin.value) === currentAccount.pin
+//     +(inputClosePin.value) === currentAccount.pin
 //   ) {
 //     const index = accounts.findIndex(
 //       (acc) => acc.username === currentAccount.username
@@ -218,7 +218,7 @@ btnTransfer.addEventListener("click", function (e) {
 // btnLoan.addEventListener("click", function (e) {
 //   e.defaultPrevented();
 
-//   const amount = Number(inputLoanAmount.value);
+//   const amount = +(inputLoanAmount.value);
 
 //   if (
 //     amount > 0 &&
@@ -234,7 +234,7 @@ btnTransfer.addEventListener("click", function (e) {
 btnLoan.addEventListener("click", function (e) {
   e.preventDefault();
 
-  const amount = Number(inputLoanAmount.value);
+  const amount = +inputLoanAmount.value;
 
   if (
     amount > 0 &&
@@ -253,7 +253,7 @@ btnClose.addEventListener("click", function (e) {
   e.preventDefault();
   if (
     inputCloseUsername.value === currentAccount.username &&
-    Number(inputClosePin.value) === currentAccount.pin
+    +inputClosePin.value === currentAccount.pin
   ) {
     const index = accounts.findIndex(
       (acc) => acc.username === currentAccount.username
@@ -407,7 +407,7 @@ console.log(desNumber);
 //Convert the first word into capital with the execption words
 
 const convertTitleCase = function (title) {
-  const exceptions = ["a", "an", "the", "but", "or", "on", "in", "with"];
+  const exceptions = ["a", "an", "the", "but", "and", "or", "on", "in", "with"];
   const titleCase = title
     .toLowerCase()
     .split(" ")
@@ -415,7 +415,8 @@ const convertTitleCase = function (title) {
       exceptions.includes(words)
         ? words
         : words[0].toUpperCase() + words.slice(1)
-    );
+    )
+    .join(" ");
   return titleCase;
 };
 
