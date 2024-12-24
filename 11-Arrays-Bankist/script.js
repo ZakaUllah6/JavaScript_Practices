@@ -351,6 +351,17 @@ const accountMovement = accounts
 
 console.log(accountMovement);
 
+//sort the strings
 const owner = accounts.flatMap((acc) => acc.owner).sort();
 console.log(owner);
+
+//Sort the number
+
+const number = accounts
+  .flatMap((acc) => acc.movements)
+  .sort((a, b) => {
+    if (a > b) return 1;
+    if (a < b) return -1;
+  });
+console.log(number);
 /////////////////////////////////////////////////
