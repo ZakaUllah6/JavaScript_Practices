@@ -42,6 +42,6 @@ document.querySelector(" header");
 const allSections = document.querySelectorAll(".section");
 console.log(allSections);
 document.getElementById("section--1");
-allButtons = document.getElementsByTagName("button");
+const allButtons = document.getElementsByTagName("button");
 console.log(allButtons);
-console.log(document.getElementsByCLassName("btn"));
+console.log(document.getElementsByClassName("btn"));
