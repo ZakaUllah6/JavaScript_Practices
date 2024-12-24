@@ -393,4 +393,18 @@ const desNumber = accounts
   .flatMap((acc) => acc.movements)
   .sort((a, b) => b - a);
 console.log(desNumber);
+
+//Convert the first word into capital with out execptions
+const convertTitleCase = function (title) {
+  const exceptions = ["a", "an", "the", "but", "or", "on", "in", "with"];
+  const titleCase = title
+    .toLowerCase()
+    .split(" ")
+    .map((words) => words[0].toUpperCase() + words.slice(1));
+  return titleCase;
+};
+
+console.log(convertTitleCase("this is a nice title"));
+console.log(convertTitleCase("this is a LONG title but not too long"));
+console.log(convertTitleCase("and here is another title with an EXAMPLE"));
 /////////////////////////////////////////////////
