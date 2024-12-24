@@ -394,13 +394,28 @@ const desNumber = accounts
   .sort((a, b) => b - a);
 console.log(desNumber);
 
-//Convert the first word into capital with out execptions
+//Convert the first word into capital
+// const convertTitleCase = function (title) {
+//   const exceptions = ["a", "an", "the", "but", "or", "on", "in", "with"];
+//   const titleCase = title
+//     .toLowerCase()
+//     .split(" ")
+//     .map((words) => words[0].toUpperCase() + words.slice(1));
+//   return titleCase;
+// };
+
+//Convert the first word into capital with the execption words
+
 const convertTitleCase = function (title) {
   const exceptions = ["a", "an", "the", "but", "or", "on", "in", "with"];
   const titleCase = title
     .toLowerCase()
     .split(" ")
-    .map((words) => words[0].toUpperCase() + words.slice(1));
+    .map((words) =>
+      exceptions.includes(words)
+        ? words
+        : words[0].toUpperCase() + words.slice(1)
+    );
   return titleCase;
 };
 
