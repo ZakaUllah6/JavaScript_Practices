@@ -350,4 +350,7 @@ const accountMovement = accounts
   .reduce((acc, curr) => acc + curr, 0);
 
 console.log(accountMovement);
+
+const owner = accounts.flatMap((acc) => acc.owner).sort();
+console.log(owner);
 /////////////////////////////////////////////////
