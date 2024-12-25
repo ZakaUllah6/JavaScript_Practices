@@ -70,3 +70,9 @@ document
   .addEventListener("click", function () {
     message.remove();
   });
+
+const btnScrollTo = document.querySelector("btn--scroll-to");
+const setion1 = document.querySelector("#section--1");
+addEventListener("click", function (e) {
+  btnScrollTo.scrollIntoView({ behaviour: "smooth" });
+});
