@@ -73,6 +73,9 @@ document
 
 const btnScrollTo = document.querySelector("btn--scroll-to");
 const setion1 = document.querySelector("#section--1");
-addEventListener("click", function (e) {
-  btnScrollTo.scrollIntoView({ behaviour: "smooth" });
+
+btnScrollTo.addEventListener("click", function (e) {
+  const s1coords = setion1.getBoundingClientRect();
+
+  section1.scrollIntoView({ behavior: "smooth" });
 });
