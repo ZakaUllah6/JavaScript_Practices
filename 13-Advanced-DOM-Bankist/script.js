@@ -106,8 +106,15 @@ btnScrollTo.addEventListener("click", function (e) {
 
 //h1
 
-const h1 = document.querySelector("h1");
+// const h1 = document.querySelector("h1");
 
-h1.addEventListener("mouseover", function (e) {
-  alert("Thats great your doing ");
+// h1.addEventListener("mouseover", function (e) {
+//   alert("Thats great your doing ");
+// });
+
+querySelectorAll(".nav__links").addEventListener("click", function (e) {
+  e.preventDefault();
+  if (e.target.classList.contains(".nav__link")) {
+    const id = e.target.getAttritube("href");
+  }
 });
