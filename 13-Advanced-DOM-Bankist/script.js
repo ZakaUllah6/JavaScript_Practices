@@ -158,3 +158,8 @@ console.log(h1.nextElementSibling);
 
 console.log(h1.previousSibling);
 console.log(h1.nextSibling);
+
+//Let suppose we need all siblings
+
+console.log(h1.parentNode.children);
+console.log(h1.parentElement.children);
