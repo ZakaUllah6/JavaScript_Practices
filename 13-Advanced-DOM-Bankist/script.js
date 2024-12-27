@@ -148,3 +148,5 @@ h1.lastElementChild.style.color = "orange";
 //Now going to travel to select element parent element or node
 console.log(h1.parentElement);
 console.log(h1.parentNode);
+
+h1.closest(".header").style.backgroundColor = "Red";
