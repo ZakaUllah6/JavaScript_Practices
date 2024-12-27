@@ -138,6 +138,8 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
   }
 });
 
+//Select the element and travel to child element of parent node
+
 const h1 = document.querySelector("h1");
 console.log(h1.querySelectorAll(".highlight"));
 h1.firstElementChild.style.color = "yellow";
