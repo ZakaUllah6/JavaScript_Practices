@@ -137,3 +137,6 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
+
+const h1 = document.querySelector("h1");
+console.log(h1.querySelectorAll(".highlight"));
