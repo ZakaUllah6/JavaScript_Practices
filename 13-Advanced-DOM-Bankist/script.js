@@ -163,4 +163,4 @@ console.log(h1.nextSibling);
 
 console.log(h1.parentNode.children);
 console.log(h1.parentElement.children);
-console.log(h1.parentElement.children);
+// console.log(h1.parentElement.children);
