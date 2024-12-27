@@ -155,3 +155,6 @@ h1.closest(".header").style.backgroundColor = "pink";
 //Going SideWays :: Siblings to Siblings
 console.log(h1.previousElementSibling);
 console.log(h1.nextElementSibling);
+
+console.log(h1.previousSibling);
+console.log(h1.nextSibling);
