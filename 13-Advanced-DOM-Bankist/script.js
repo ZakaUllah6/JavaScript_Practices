@@ -149,4 +149,9 @@ h1.lastElementChild.style.color = "orange";
 console.log(h1.parentElement);
 console.log(h1.parentNode);
 
-h1.closest(".header").style.backgroundColor = "Red";
+console.log(h1.closest(".header"));
+h1.closest(".header").style.backgroundColor = "pink";
+
+//Going SideWays :: Siblings to Siblings
+console.log(h1.previousElementSibling);
+console.log(h1.nextElementSibling);
