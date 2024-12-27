@@ -140,3 +140,5 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
 
 const h1 = document.querySelector("h1");
 console.log(h1.querySelectorAll(".highlight"));
+h1.firstElementChild.style.color = "yellow";
+h1.lastElementChild.style.color = "orange";
