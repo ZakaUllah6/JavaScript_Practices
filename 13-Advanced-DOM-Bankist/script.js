@@ -165,31 +165,24 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
 // console.log(h1.parentElement.children);
 // // console.log(h1.parentElement.children);
 
-//Tapped Component
+////////////////////////////////////////
+// Tabbed component
 
-const tabs = document.querySelectorAll(".operations__tab");
-const tabContainer = document.querySelector(".operations__tab-container");
-const tabContent = document.querySelectorAll(".operations__content");
-
-tabContainer.addEventListener("click", function (e) {
+tabsContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".operations__tab");
-  console.log(clicked);
 
-  //Guard Clause
+  // Guard clause
   if (!clicked) return;
 
-  //Close the Tabs
+  // Remove active classes
   tabs.forEach((t) => t.classList.remove("operations__tab--active"));
-  clicked.classList.add("operations__tab--active");
-  tabContainer.forEach((ta) => ta.classList.remove("operations__tab--active"));
+  tabsContent.forEach((c) => c.classList.remove("operations__content--active"));
 
-  //Active Tabs
-  clicked.classList.add("operations__tab--active");
+  // Activate tab
   clicked.classList.add("operations__tab--active");
 
-  //Activate The Content Area
-  console.log(clicked.dataset.tab);
+  // Activate content area
   document
-    .querySelector(`operations__content ${clicked.dataset.tab}`)
-    .classList.add("operations__tab--active");
+    .querySelector(`.operations__content--${clicked.dataset.tab}`)
+    .classList.add("operations__content--active");
 });
