@@ -172,6 +172,9 @@ const tabContainer = document.querySelector(".operations__tab-container");
 const tabContent = document.querySelectorAll(".operations__content");
 
 tabContainer.addEventListener("click", function (e) {
-  const clicked = e.target.closet(".operations__tab");
+  const clicked = e.target.closest(".operations__tab");
   console.log(clicked);
+
+  if (!clicked) return;
+  clicked.classList.add("operations__tab--active");
 });
