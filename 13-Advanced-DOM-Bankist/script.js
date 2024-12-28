@@ -167,11 +167,11 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
 
 //Tapped Component
 
-const tabs = document.querySelectorAll(".operations");
+const tabs = document.querySelectorAll(".operations__tab");
 const tabContainer = document.querySelector(".operations__tab-container");
 const tabContent = document.querySelectorAll(".operations__content");
 
 tabContainer.addEventListener("click", function (e) {
-  const clicked = e.target;
+  const clicked = e.target.closet("");
   console.log(clicked);
 });
