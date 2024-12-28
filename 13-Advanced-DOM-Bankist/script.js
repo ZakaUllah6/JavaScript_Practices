@@ -182,4 +182,6 @@ tabContainer.addEventListener("click", function (e) {
 
   tabs.forEach((t) => t.classList.remove("operations__tab--active"));
   clicked.classList.add("operations__tab--active");
+
+  //Activate The Content Area
 });
