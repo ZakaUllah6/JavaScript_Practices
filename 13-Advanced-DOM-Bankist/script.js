@@ -172,6 +172,6 @@ const tabContainer = document.querySelector(".operations__tab-container");
 const tabContent = document.querySelectorAll(".operations__content");
 
 tabContainer.addEventListener("click", function (e) {
-  const clicked = e.target.closet("");
+  const clicked = e.target.closet(".operations__tab");
   console.log(clicked);
 });
