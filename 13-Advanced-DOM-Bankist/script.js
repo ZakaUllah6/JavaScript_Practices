@@ -170,3 +170,8 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
 const tabs = document.querySelectorAll(".operations");
 const tabContainer = document.querySelector(".operations__tab-container");
 const tabContent = document.querySelectorAll(".operations__content");
+
+tabContainer.addEventListener("click", function (e) {
+  const clicked = e.target;
+  console.log(clicked);
+});
