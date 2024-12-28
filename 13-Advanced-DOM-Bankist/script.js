@@ -138,29 +138,29 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
   }
 });
 
-//Select the element and travel to child element of parent node
+// //Select the element and travel to child element of parent node
 
-const h1 = document.querySelector("h1");
-console.log(h1.querySelectorAll(".highlight"));
-h1.firstElementChild.style.color = "yellow";
-h1.lastElementChild.style.color = "orange";
+// const h1 = document.querySelector("h1");
+// console.log(h1.querySelectorAll(".highlight"));
+// h1.firstElementChild.style.color = "yellow";
+// h1.lastElementChild.style.color = "orange";
 
-//Now going to travel to select element parent element or node
-console.log(h1.parentElement);
-console.log(h1.parentNode);
+// //Now going to travel to select element parent element or node
+// console.log(h1.parentElement);
+// console.log(h1.parentNode);
 
-console.log(h1.closest(".header"));
-h1.closest(".header").style.backgroundColor = "pink";
+// console.log(h1.closest(".header"));
+// h1.closest(".header").style.backgroundColor = "pink";
 
-//Going SideWays :: Siblings to Siblings
-console.log(h1.previousElementSibling);
-console.log(h1.nextElementSibling);
+// //Going SideWays :: Siblings to Siblings
+// console.log(h1.previousElementSibling);
+// console.log(h1.nextElementSibling);
 
-console.log(h1.previousSibling);
-console.log(h1.nextSibling);
+// console.log(h1.previousSibling);
+// console.log(h1.nextSibling);
 
-//Let suppose we need all siblings
+// //Let suppose we need all siblings
 
-console.log(h1.parentNode.children);
-console.log(h1.parentElement.children);
+// console.log(h1.parentNode.children);
 // console.log(h1.parentElement.children);
+// // console.log(h1.parentElement.children);
