@@ -28,3 +28,12 @@ console.log(malidta, jonas);
 console.log(jonas instanceof Person);
 console.log(malidta instanceof Person);
 console.log(zaka instanceof Person);
+
+//Prototypes
+
+Person.prototype.calcAge = function () {
+  console.log(2025 - this.birthYear);
+};
+zaka.calcAge();
+jonas.calcAge();
+malidta.calcAge();
