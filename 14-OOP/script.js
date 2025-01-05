@@ -38,4 +38,4 @@ zaka.calcAge();
 jonas.calcAge();
 malidta.calcAge();
 
-console.log(zaka);
+// console.log(zaka);
