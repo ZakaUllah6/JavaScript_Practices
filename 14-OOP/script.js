@@ -37,3 +37,5 @@ Person.prototype.calcAge = function () {
 zaka.calcAge();
 jonas.calcAge();
 malidta.calcAge();
+
+console.log(zaka);
