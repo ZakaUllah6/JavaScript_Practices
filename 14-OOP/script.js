@@ -2,6 +2,7 @@
 
 const Person = function (firstName, birthYear) {
   //   console.log(this);
+  //Instance Properties
   this.firstName = firstName;
   this.birthYear = birthYear;
 };
