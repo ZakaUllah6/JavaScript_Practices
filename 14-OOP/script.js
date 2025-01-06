@@ -43,6 +43,9 @@ malidta.calcAge();
 //Classes in javaScript
 
 class hello {
+  constructor() {
+    console.log("This is constructor Methods ");
+  }
   message() {
     console.log("Hello World!");
   }
