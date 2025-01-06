@@ -46,7 +46,10 @@ class hello {
   message() {
     console.log("Hello World!");
   }
+  stay() {
+    console.log("try to stay");
+  }
 }
-
 let a = new hello();
 a.message();
+a.stay();
