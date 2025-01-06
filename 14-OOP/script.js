@@ -57,4 +57,4 @@ let a = new hello();
 a.message();
 a.stay();
 
-// xconsole.log("Zaka");
+console.log("Zaka");
