@@ -39,3 +39,14 @@ jonas.calcAge();
 malidta.calcAge();
 
 // console.log(zaka);
+
+//Classes in javaScript
+
+class hello {
+  message() {
+    console.log("Hello World!");
+  }
+}
+
+let a = new hello();
+a.message();
