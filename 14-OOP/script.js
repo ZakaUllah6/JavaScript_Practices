@@ -56,5 +56,3 @@ class hello {
 let a = new hello();
 a.message();
 a.stay();
-
-// console.log("Zaka");
